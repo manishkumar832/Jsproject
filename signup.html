@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <div id="navbar">
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyMDAgMjQiPgogICAgPGcgZmlsbD0iIzM0NDU0RSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNMzEuMDczIDE1LjYwOHYtLjA0NmMwLTQuNTg0IDMuNDg0LTguNDI0IDguNDEzLTguNDI0IDQuOTMgMCA4LjM2NSAzLjc5NCA4LjM2NSA4LjM3OHYuMDQ2YzAgNC41ODUtMy40ODMgOC40MjUtOC40MTMgOC40MjVzLTguMzY1LTMuNzk1LTguMzY1LTguMzc5em0xMy44MjIgMHYtLjA0NmMwLTMuMTY2LTIuMjctNS43OTUtNS40NTctNS43OTUtMy4xODggMC01LjQwOSAyLjU4NC01LjQwOSA1Ljc1di4wNDVjMCAzLjE2NiAyLjI3IDUuNzk1IDUuNDU3IDUuNzk1IDMuMTg4IDAgNS40MDktMi41ODMgNS40MDktNS43NDl6TTUzLjMwOCAxNi43OTVWNy40MThoMi44MnY5LjI2YzAgMy4wMjYgMS41MzQgNC42NTUgNC4wNTYgNC42NTUgMi41MjIgMCA0LjAzNC0xLjUzNCA0LjAzNC00LjUzOFY3LjQxOGgyLjgxOHY5LjI0YzAgNC44NTMtMi43MDMgNy4zMDQtNi44OTggNy4zMDQtNC4xOTQgMC02LjgzLTIuNDQzLTYuODMtNy4xNjd6TTc3LjE0NSAxMC4wNzJINzIuMDZWNy40MThoMTMuMDE3djIuNjU0aC01LjA4N3YxMy42MzRoLTIuODQ0ek05MC4zNjIgNy40MThoMTEuOTQydjIuNjA1aC05LjEzNXY0LjQ0NGg4LjA5djIuNjA4aC04LjA5djYuNjMxaC0yLjgwN3pNMTA3Ljg0IDcuNDE4aDIuODE4djE2LjI4OGgtMi44MTh6TTExOS42NyAxMC4wNzJoLTUuMDlWNy40MThoMTMuMDJ2Mi42NTRoLTUuMDg5djEzLjYzNGgtMi44NDF6TTEzNi44MTUgMTAuMDcyaC01LjA4N1Y3LjQxOGgxMy4wMTh2Mi42NTRoLTUuMDg3djEzLjYzNGgtMi44NDR6TTE1MC4wMTYgNy40MThoMTEuODk2djIuNTZoLTkuMDczdjQuMjM2aDguMDQ1djIuNTU5aC04LjA0NXY0LjM3NGg5LjE5djIuNTZoLTEyLjAxM3pNMTY3LjY3IDcuNDE4aDcuMTVjMi4wMTkgMCAzLjU5OC42MDQgNC42MzEgMS42MThhNC45NzIgNC45NzIgMCAwIDEgMS4zMzIgMy41MDZ2LjA0NmMwIDIuNjc1LTEuNTgyIDQuMjgyLTMuODI3IDQuOTM1bDQuMzMgNi4xNjRoLTMuMzI2bC0zLjk0MS01LjY2M2gtMy41MzJ2NS42NjNoLTIuODE3VjcuNDE4em02Ljk0NSA4LjA3NGMyLjAxNiAwIDMuMy0xLjA3OSAzLjMtMi43MnYtLjA1YzAtMS43NDQtMS4yMzktMi42OTYtMy4zMjQtMi42OTZoLTQuMTA0djUuNDY5bDQuMTI4LS4wMDN6TTE5MC42ODQgMTcuMjg1bC02LjM3LTkuODY3aDMuMzI0bDQuNDkyIDcuMjE0IDQuNTI4LTcuMjE0aDMuMjNsLTYuMzcgOS43OTd2Ni40OTFoLTIuODM0ek0yMC41ODkgMTQuMzRjLS4wOTktLjgzNS4wOTUtMS42OTMuNDg0LTIuMDAzLjQ0Mi0uMzQ4IDEuMTA1LS4yNTYgMS41OTguMTg2Ljc1MS0xLjM3LS41ODgtMS45NjgtLjU4OC0xLjk2OHMuMzMyLS43OS0xLjk2My0xLjg1OGE1LjA1IDUuMDUgMCAwIDEtMi4xNTItMS44ODggMi43NyAyLjc3IDAgMCAwIC4yNSAyLjE5NWMtLjMzLjMzNS0uNi43MjYtLjc5OSAxLjE1NGEzLjYgMy42IDAgMCAxLS4xOTEuMzE2Yy0xLjY2Ny0uMjUxLTEuNzI2LTMuODAzLTEuNzI2LTMuODAzYTEuMjcyIDEuMjcyIDAgMCAwLS42MS0xLjAxTDkuMTkgMS44ODRDOC41NzUgMS40NTYgNy43MjguNzg3IDcuMzQyLjA4OWMtLjEzMy40MDMtLjE5LjgyNy0uMTY4IDEuMjUxLjA3IDEuNDAyIDEuMDY2IDIuNzggMi4yNzIgMy40NjNBNS43OTMgNS43OTMgMCAwIDEgNi42IDIuNjE2Yy0uMDg1LjQyLS4wOTQuODU0LS4wMjQgMS4yNzguMzU0IDIuMDI4IDIuMTEgMy40OTUgNC4xNDQgMy40NjJhNS41MTUgNS41MTUgMCAwIDEtMy45NjMtMS4yODljLjA1LjQ0My4xNzMuODc0LjM2OCAxLjI3M2E0LjExNiA0LjExNiAwIDAgMCAzLjkzNiAyLjM2OCA1LjAxOCA1LjAxOCAwIDAgMS0yLjY2My0uMDUxYy4yMzIuMzk2LjUyNi43NS44NyAxLjA1MS42NzkuNiAxLjUzNC45NTYgMi40MzIgMS4wMTItLjQxOC40NTMtMi4zNC0uMDItMi4zNC0uMDItMS4zMzItLjIzNC0yLjU4NC0uMDYxLTMuNzA1IDEuMTg3bC0uMDE2LS4wNGExLjI2NiAxLjI2NiAwIDAgMS0uNTg2LjA4MyAxLjA2MyAxLjA2MyAwIDAgMS0uNzQ4LS40NThjLS4zMzYtLjM5NC0uMzEtLjk1LjA3Ny0xLjY1Ljc3Ny0xLjQwMy4zODktMi4zNDYtLjA3Mi0yLjg5MWEyLjQ2MSAyLjQ2MSAwIDAgMC0xLjUyOS0uODYgMS45OCAxLjk4IDAgMCAwLTEuMDk0LS4zMzggMi4xMzIgMi4xMzIgMCAwIDAtMS41NDUuNzE1bC0uMTM2LjE0My4xMzYuMTQzYy4zOTYuNDQzLjk1NS43MDIgMS41NDUuNzE1YTEuOTYzIDEuOTYzIDAgMCAwIDEuMDQxLS4zMDVjLjMwNi4wNTEuNTgzLjIxLjc4My40NS4zMzYuMzk3LjMwOS45NTItLjA4IDEuNjUtLjc3OCAxLjQwMy0uMzg5IDIuMzUuMDc1IDIuODk0LjM4LjQxLjg3NC42OTIgMS40MTYuODA5YTYuMzk0IDYuMzk0IDAgMCAwLS40ODIgMS43NTUgNi41NCA2LjU0IDAgMCAxLS4wNi40MjcgNC41MyA0LjUzIDAgMCAxLTIuMjA2IDMuNDZjLjA0NC44ODYtLjE0IDEuNzctLjUzMyAyLjU2NC40MDIuNTcyLjc0NyAxLjE4MiAxLjAzMSAxLjgyM2gyLjg3YS40ODIuNDgyIDAgMCAwIC4yNC0uNDc4LjY4OC42ODggMCAwIDAtLjY1NS0uNTk4LjU4NC41ODQgMCAwIDAtLjIxLjAzMnMtMS4wOTcuNDI2LTEuNDUxLS4zMThjLS4yODMtLjY0Mi0uMDk2LTEuNjk5LjY1Mi0yLjEyOC41NTctLjMyIDIuODYtMS4xMjcgMy4yMTUtMS44MzMuMzE2LS42MzEuNzMtMS42NzIgMS4xNTMtMi4wMTcuMjUuODgxLjYzNCAyLjY3LTEuMjEgMy4yODdhNS4yMSA1LjIxIDAgMCAxLS42NiAyLjI3MyA5LjU3NyA5LjU3NyAwIDAgMSAxLjAzMyAxLjc4MmgyLjg0N2EuNDg0LjQ4NCAwIDAgMCAuMjQ4LS40NzcuNjg4LjY4OCAwIDAgMC0uNjU1LS41OTkuNTk1LjU5NSAwIDAgMC0uMjEuMDMzcy0xLjA5LjQ0Mi0xLjQ0NC0uM0ExLjYxMiAxLjYxMiAwIDAgMSA5LjEgMjAuNjNjLjc2NC0uMzc1IDIuNTY3LTEuMTggMi45ODgtMS43NS40NjYtLjU2OS4yOS0yLjU4Ni4yOS0yLjU4Ni45ODUuMzMgMS45MTYuODA5IDIuNzYyIDEuNDE4LjIzNC43MDcuMjIgMS40NTQtLjkxOSAxLjg3IDAgLjQ2LS4wOSAxLjcwNi0uNjI4IDIuNjE4LjI3OS4zNi41MzQuNzM4Ljc2NCAxLjEzMmEuNjMuNjMgMCAwIDEtLjQ0Mi0uMDU2Ljg2Ni44NjYgMCAwIDEtLjEwNy0uMDY1Yy4wNTMuMjkuMjM4LjUzOS40OTguNjcxYS44NjcuODY3IDAgMCAwIC4zODEuMDk3SDE3LjVhLjQ3NC40NzQgMCAwIDAgLjIzMi0uNDc0LjY5LjY5IDAgMCAwLS42NTgtLjU5OS42MDMuNjAzIDAgMCAwLS4yMS4wM3MtMS4wNS41NC0xLjQwNC0uMjFhMS42OCAxLjY4IDAgMCAxIC43My0yLjA5NmMuMzc2LS4xNy45ODgtLjQzMSAxLjU4Mi0uNzIuMTc1LjE1Mi4zMy4zMjYuNDYuNTE4LjIzOC4zNjUuMzMyLjgwNi4yNjcgMS4yMzguNzc0LjM0IDEuNDE2LjkyNyAxLjgzIDEuNjcyYS42NzguNjc4IDAgMCAxLS41MjctLjEyN2MuMDUuMjkuMjM0LjU0LjQ5NS42NzEuMTE5LjA2Mi4yNS4wOTUuMzgzLjA5N2gyLjc5NmEuNDgyLjQ4MiAwIDAgMCAuMjQ1LS40NzQuNjg4LjY4OCAwIDAgMC0uNjU1LS41OTkuNTg0LjU4NCAwIDAgMC0uMjEuMDMzcy0uODg3LjQyOC0xLjM2Ni0uMTRjLS44NC0uOTg4LTEuNDMzLTIuNjk3LTEuNjY3LTQuMzQ4YTYuNDMgNi40MyAwIDAgMCAuNzY3LTQuMTF6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+            alt="logo image" width="15%">
+        <div id="btns">
+            <div class="dropdown">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <span>CHANGE COUNTRY</span>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGQ0UwMCIgZD0iTTAgMTAuNjQ0aDI0djUuMzIzSDB6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTAgMGgyNHY1LjMyMkgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNEMDAiIGQ9Ik0wIDUuMzIyaDI0djUuMzIySDB6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                            alt="" width="20px"> Deutschland</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTI0IDE2SDBWMGgyNHoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjREYwMDAwIiBkPSJNMjQgMTZIMHYtNS4zMzNoMjRWMTZ6bTAtMTAuNjYySDBWLjAwNGgyNHY1LjMzNHoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                            alt="" width="20px"> Osterreich</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0Q1MkIxRSIgZD0iTTAgMGgyNHYxNkgweiIvPgogICAgICAgIDxnIGZpbGw9IiNGRkYiPgogICAgICAgICAgICA8cGF0aCBkPSJNNi4zNzUgNi41aDExLjI1djNINi4zNzV6Ii8+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMC4zMTMgM2gzLjM3NHYxMGgtMy4zNzR6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+                            alt="" width="20px"> Schweiz</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwQTFERSIgZD0iTTAgOGgyNHY4SDB6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0VEMjkzOSIgZD0iTTAgMGgyNHY4SDB6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTAgNS4zMzNoMjR2NS4zMzRIMHoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                            alt="" width="20px"> Luxembourg</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTAgMGgyNHYxNS45M0gweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiMyMTQ2OEIiIGQ9Ik0wIDEwLjY5aDI0VjE2SDB6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0iI0FFMUMyOCIgZD0iTTAgMGgyNHY1LjMxSDB6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                            alt="" width="20px"> Netherlands</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTAgMGg3Ljk4OHYxNkgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkQ5MEMiIGQ9Ik03Ljk4OCAwaDcuOTg3djE2SDcuOTg4eiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGMzE4MzAiIGQ9Ik0xNS45NzUgMGg3Ljk4OHYxNmgtNy45ODh6Ii8+CiAgICA8L2c+Cjwvc3ZnPgo="
+                            alt="" width="20px"> Belgie</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAxNiI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYUZsYWdTZUljb24iIGQ9Ik0uMDIgMGgyMy45NTR2MTZILjAyeiIvPgogICAgPC9kZWZzPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8bWFzayBpZD0iYkZsYWdTZUljb24iIGZpbGw9IiNmZmYiPgogICAgICAgICAgICA8dXNlIHhsaW5rOmhyZWY9IiNhRmxhZ1NlSWNvbiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2JGbGFnU2VJY29uKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiMwMDZBQTciIGQ9Ik0tLjMzMi4wMUg4LjA5djYuNEgtLjMzVi4wMXptMCA5LjU5SDguMDlWMTZILS4zM1Y5LjZ6Ii8+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNGRUNDMDAiIGQ9Ik0tLjMzMiA2LjQwNkg4LjA5djMuMkgtLjMzeiIvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjRkVDQzAwIiBkPSJNOC4wNTUgMGgzLjM2OHYxNkg4LjA1NXoiLz4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI0ZFQ0MwMCIgZD0iTTExLjMxNiA2LjQwN2gxNS4xNTh2My4ySDExLjMxNnoiLz4KICAgICAgICAgICAgPHBhdGggZmlsbD0iIzAwNkFBNyIgZD0iTTExLjQyIDkuNmgxNS4xNThWMTZIMTEuNDJWOS42em0wLTkuNTloMTUuMTU4djYuNEgxMS40MlYuMDF6Ii8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K"
+                            alt="" width="20px"> Sverige</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI0M2MEMzMCIgZD0iTTAgMGgyMy45NjZ2MTZIMHoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNNy43MDIgMGgyLjU2OHYxNkg3LjcwMnoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjRkZGIiBkPSJNMCA2Ljg1N2gyMy45NjZ2Mi4yODZIMHoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                            alt="" width="20px"> Denmark</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDE2Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyI+CiAgICAgICAgPHBhdGggZmlsbD0iI0VEMjkzOSIgZD0iTTAgMGgyNHYxNkgweiIvPgogICAgICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0wIDBoMTZ2MTZIMHoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDh2MTZIMHoiLz4KICAgIDwvZz4KPC9zdmc+Cg=="
+                            alt="" width="20px"> France</li>
+                    <li><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjYiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAyNiAxOCI+CiAgICA8ZGVmcz4KICAgICAgICA8cGF0aCBpZD0iYUZsYWdVa0ljb24iIGQ9Ik0xMiA4aDEydjhMMTIgOHptMCAwdjhIMGwxMi04em0wIDBIMFYwbDEyIDh6bTAgMFYwaDEyTDEyIDh6Ii8+CiAgICA8L2RlZnM+CiAgICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxwYXRoIGZpbGw9IiMwMDI0N0QiIGQ9Ik0xIDF2MTZoMjRWMXoiLz4KICAgICAgICA8cGF0aCBmaWxsPSIjMDAwIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMi40IiBkPSJNMSAxbDI0IDE2bTAtMTZMMSAxNyIvPgogICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEgMSkiPgogICAgICAgICAgICA8bWFzayBpZD0iYkZsYWdVa0ljb24iIGZpbGw9IiNmZmYiPgogICAgICAgICAgICAgICAgPHVzZSB4bGluazpocmVmPSIjYUZsYWdVa0ljb24iLz4KICAgICAgICAgICAgPC9tYXNrPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjMDAwIiBzdHJva2U9IiNDRjE0MkIiIHN0cm9rZS13aWR0aD0iMS42IiBkPSJNMCAwbDI0IDE2bTAtMTZMMCAxNiIgbWFzaz0idXJsKCNiRmxhZ1VrSWNvbikiLz4KICAgICAgICA8L2c+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwMCIgc3Ryb2tlPSIjRkZGIiBzdHJva2Utd2lkdGg9IjQiIGQ9Ik0xMyAxdjE2TTEgOWgyNCIvPgogICAgICAgIDxwYXRoIGZpbGw9IiMwMDAiIHN0cm9rZT0iI0NGMTQyQiIgc3Ryb2tlLXdpZHRoPSIyLjQiIGQ9Ik0xMyAxdjE2TTEgOWgyNCIvPgogICAgPC9nPgo8L3N2Zz4K"
+                            alt="" width="20px"> United Kingdom</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h1>signup</h1>
+
+
+    <form id="signupform" autocomplete="off">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" placeholder="Name" name="name" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" placeholder="Email" required><br><br>
+        <label for="password">password</label><br>
+        <input type="password" name="password" id="password" placeholder="password" required autocomplete="off"><br><br>
+        <select name="select" id="role">
+            <option selected disabled>--select--</option>
+            <option id="seller">Seller</option>
+            <option id="Buyer">Buyer</option>
+        </select><br><br>
+        <button type="submit">submit</button>
+        <script type="module" src="signup.js"></script>
+    </form>
+</body>
+
+</html>

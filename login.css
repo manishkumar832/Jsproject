@@ -1,0 +1,99 @@
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:white;
+    padding: 15px 5px ;
+}
+#btns{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+#btns>a{
+    text-decoration: none;
+    color: rgb(77, 76, 76);
+    font-weight:700;
+}
+#btns>.dropdown{
+    font-size: small;
+    background-color:white;
+    color: grey;
+}
+.inside{
+    padding: 2px 200px;
+}
+.dropdown-menu>li{
+    margin:10px 10px;
+    padding: 0px 10px ;
+    font-size:small;
+
+}
+.dropdown-menu>span{
+    padding:0px 5px;
+    color: gray;
+    font-size:medium ;
+    margin-bottom: 20px;
+}
+#loginform {
+    width: 300px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body>h1{
+   text-align: center;
+    margin-top: 30px;
+     color: #737272;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4c93af;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+ select {
+        background-color: #fff;
+    }
+p {
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+}
+p>a{
+    text-decoration: none;
+}
